@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #1b2029;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #8880fe;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+main .social-media {
+    display: flex;
+    align-items: center;
+}
+
+main .social-media  img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media :first-child img {
+    margin-left: 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form span {
+    margin-top: 2rem;
+}
+
+input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    border: none;
+    padding: 0 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    outline: none;
+    color: rgb(166, 166, 166);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border-radius: 10px;
+    background: #6c63ff;
+    margin-top: 1rem;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover{
+    opacity: 0.7;
+    color: #fff;
+}
+
+.alternative span {
+    position: relative; /*a posição do alternative tem 
+    que ser relative para que o after e o before 
+    sejam absoluto a ele*/
+}
+
+.alternative span::before, .alternative span::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100px;
+    background: #fff;
+    bottom: 50%;
+    right: 50px;
+}
+
+.alternative span::after {
+    left: 50px;
+}
+
+/* outra forma que desenvolvi, também funciona :)
+
+.alternative {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.before {
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    margin-right: 5px;
+}
+.after {
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    margin-left: 5px;
+}  */
